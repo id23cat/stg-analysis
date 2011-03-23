@@ -1,4 +1,4 @@
-IMG=imread('./BMP/05.bmp');
+IMG=imread('./BMP/4.bmp');
 %I1=get1DBitSignal(IMG(:,:,1));
 % disp 'get2DBitSignal(IMG(:,:,1)) : '
 color = 1;
@@ -19,6 +19,15 @@ color = 1;
 % 
  x=1:width;
  y=1:height;
+ IMG2=IMG.*2;
+ IMG4=IMG.*4;
+ IMG8=IMG.*8;
+ IMG16=IMG.*16;
+ figure; imshow(IMG); 
+ figure; imshow(IMG2); 
+ figure; imshow(IMG4); 
+ figure; imshow(IMG8); 
+ figure; imshow(IMG16); 
 % 
 % bitn = 2;
 % 

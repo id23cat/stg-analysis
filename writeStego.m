@@ -23,8 +23,8 @@ switch nargin
 		mi=1;
 		mb=1;
 		for i=1:rgb
-			for j=1:hight
-				for k=1:width					
+			for j=1:height
+				for k=1:2:width					
 					bit = bitget(Message(mi), mb);	%запись сообщения
 					A(j,k,i)=bitset(A(j,k,i),1,bit);
 					mb=mb+1;
@@ -42,7 +42,7 @@ switch nargin
 		mi=1;
 		mb=1;
 		for i=1:rgb
-			for j=1:hight
+			for j=1:height
 				for k=1:width
 					bit = bitget(Message(mi), mb);	%запись сообщения
 					A(j,k,i)=bitset(A(j,k,i),nbit,bit);
